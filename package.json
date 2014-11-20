@@ -1,0 +1,24 @@
+{
+  "name": "durandal.forge",
+  "version": "0.1.0",
+  "description": "DurandalForge core",
+  "homepage": "https://github.com/DurandalForge/durandal.forge",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DurandalForge/durandal.forge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DurandalForge/durandal.forge/issues"
+  },
+  "dependencies": {
+    "traceur": "^0.0.72",
+    "es6-shim": "~0.11.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-traceur": "vojtajina/gulp-traceur#fix-sourcemaps",
+    "through2": "~0.4.1"
+  },
+  "author": "Muhammad Safraz Razik <mr.safraz@gmail.com>",
+  "license": "MIT"
+}
