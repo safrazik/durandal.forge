@@ -15,6 +15,10 @@ define(['di'], function($__0) {
   function _loadModule(module) {
     var objectOnly = arguments[1] !== (void 0) ? arguments[1] : false;
     moduleInjector = moduleInjector.createChild(_allModules);
+    if (module.inject) {
+      var injects = typeof module.inject === 'function' ? module.inject() : module.inject;
+      annotate(module, new (Function.prototype.bind.apply(Inject, $traceurRuntime.spread([null], injects)))());
+    }
     var moduleInstance = moduleInjector.get(module);
     return moduleInstance;
   }

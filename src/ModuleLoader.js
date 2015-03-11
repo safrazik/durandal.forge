@@ -10,6 +10,10 @@ var isFunction = function(param){
 
 function _loadModule(module, objectOnly = false){
   moduleInjector = moduleInjector.createChild(_allModules);
+  if(module.inject){
+    var injects = typeof module.inject === 'function' ? module.inject() : module.inject;
+    annotate(module, new Inject(...injects));
+  }
   var moduleInstance = moduleInjector.get(module);
   return moduleInstance;
 }
