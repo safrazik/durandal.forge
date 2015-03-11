@@ -1,4 +1,4 @@
-import {Provide, Injector, annotate, TransientScope} from 'di';
+import {Provide, Inject, Injector, annotate, TransientScope} from 'di';
 
 var _allModules = [];
 

@@ -4,6 +4,7 @@ define(['di'], function($__0) {
     $__0 = {default: $__0};
   var $__1 = $__0,
       Provide = $__1.Provide,
+      Inject = $__1.Inject,
       Injector = $__1.Injector,
       annotate = $__1.annotate,
       TransientScope = $__1.TransientScope;
